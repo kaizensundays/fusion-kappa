@@ -1,17 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kaizensundays.fusion</groupId>
     <artifactId>fusion-kappa</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <scm>
         <url>https://github.com/kaizensundays/fusion-kappa.git</url>
         <connection>git@github.com:kaizensundays/fusion-kappa.git</connection>
         <developerConnection>scm:git:https://github.com/kaizensundays/fusion-kappa.git</developerConnection>
-    </scm>
+      <tag>fusion-kappa-0.0.1</tag>
+  </scm>
 
     <profiles>
         <profile>
