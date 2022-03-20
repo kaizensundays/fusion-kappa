@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kaizensundays.fusion</groupId>
     <artifactId>fusion-kappa</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -14,7 +14,7 @@
         <url>scm:git:git@github.com:kaizensundays/fusion-kappa.git</url>
         <connection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</connection>
         <developerConnection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</developerConnection>
-        <tag>fusion-kappa-0.0.7</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
