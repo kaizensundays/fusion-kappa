@@ -39,6 +39,7 @@
                             <configuration>
                                 <useReleaseProfile>false</useReleaseProfile>
                                 <tagNameFormat>v@{version}</tagNameFormat>
+                                <autoVersionSubmodules>true</autoVersionSubmodules>
                             </configuration>
                         </plugin>
                     </plugins>
