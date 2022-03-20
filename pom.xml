@@ -6,6 +6,10 @@
     <version>0.0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>fusion-kappa-alpha</module>
+    </modules>
+
     <scm>
         <url>scm:git:git@github.com:kaizensundays/fusion-kappa.git</url>
         <connection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</connection>
