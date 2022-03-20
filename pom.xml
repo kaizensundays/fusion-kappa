@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kaizensundays.fusion</groupId>
     <artifactId>fusion-kappa</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
 
     <scm>
@@ -12,6 +12,14 @@
         <developerConnection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>kaizensundays</name>
+            <url>https://artifactory.nevada.local/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
 
     <profiles>
         <profile>
