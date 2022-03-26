@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.kaizensundays.fusion</groupId>
         <artifactId>fusion-kappa</artifactId>
-        <version>0.0.8-SNAPSHOT</version>
+        <version>0.0.8</version>
     </parent>
     <artifactId>fusion-kappa-alpha</artifactId>
 
