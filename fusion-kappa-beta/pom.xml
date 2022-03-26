@@ -2,39 +2,24 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kaizensundays.fusion</groupId>
-    <artifactId>fusion-kappa</artifactId>
+    <artifactId>fusion-kappa-beta</artifactId>
     <version>0.0.8-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>fusion-kappa-alpha</module>
-        <module>fusion-kappa-beta</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
 
-    <scm>
-        <url>scm:git:git@github.com:kaizensundays/fusion-kappa.git</url>
-        <connection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</connection>
-        <developerConnection>scm:git:git@github.com:kaizensundays/fusion-kappa.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
+    <dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>nexus</id>
-            <name>kaizensundays-releases</name>
-            <url>https://artifactory.nevada.local/artifactory/libs-release-local</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus</id>
-            <name>kaizensundays-snapshots</name>
-            <url>https://artifactory.nevada.local/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <pluginManagement>
@@ -51,6 +36,31 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
     </build>
 
     <profiles>
